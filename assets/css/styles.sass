@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap')
+    
+$light: #fff
+$dark: #080208
+    
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html
+    font-family: 'Poppins', sans-serif
+
+header
+    width: 100%
+    padding: 25px 40px
+    background: $dark
+    color: $light
+    border-bottom: 1px solid $light
+    
+    position: fixed
+    top: 0
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    #title
+        margin: 0
+        font-weight: 300
+        font-size: 30px
+        color: $light
+        text-decoration: none
+
+    nav
+        display: flex
+        gap: 25px
+
+        a
+            text-decoration: none
+            color: $light
+            font-weight: 100
+            opacity: 0.5
+            transition: opacity .3s
+
+            &:hover
+                opacity: 1
+
+main
+    width: 100%
+    height: 100vh
+
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 300px
+
+    background: $dark
+
+    .title
+        color: $light
+        font-weight: 300
+        display: flex
+        flex-direction: column
+
+        h1
+            font-weight: 300
+            margin: 0
+            font-size: 100px
+
+        p
+            color: rgba(255, 255, 255, 0.5)
+            font-size: 25px
+            margin: 0
+
+        .pedir
+            text-decoration: none
+            color: $light
+            border: 1px solid $light
+            width: 230px
+            text-align: center
+            margin-top: 15px
+            opacity: 0.5
+            font-size: 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 5px
+            padding: 10px
+            transition: opacity .3s
+
+            &:hover
+                opacity: 1
+
+        .redes
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 10px
+            width: 230px
+
+            a
+                border: 1px solid $light
+                color: $light
+                font-size: 20px
+                font-weight: 100 
+                display: flex
+                justify-content: center
+                align-items: center
+                text-decoration: none
+                opacity: 0.5
+                padding: 5px 12.5px
+                transition: opacity .3s
+
+                &:hover
+                    opacity: 1
+                
+
+.section
+    background: $dark
+    display: flex
+    justify-content: center
+
+    h2
+        font-size: 75px
+        color: $light
+        font-weight: 300
+
+footer
+    width: 100%
+    height: 50vh
+    
+    background: $dark
+
+#whatsapp
+    border: none
+    position: fixed
+    bottom: 4%
+    right: 3%
+    width: 55px
+    z-index: 1

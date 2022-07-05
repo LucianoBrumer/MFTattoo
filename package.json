@@ -1,0 +1,20 @@
+{
+  "name": "mftattoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/css/styles.sass assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoBrumer/MFTattoo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucianoBrumer/MFTattoo/issues"
+  },
+  "homepage": "https://github.com/LucianoBrumer/MFTattoo#readme"
+}
