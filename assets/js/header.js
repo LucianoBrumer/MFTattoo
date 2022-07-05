@@ -5,7 +5,7 @@ header.timer = null
 window.scrollY > 0 ? header.mode = 'normal' : header.mode = 'top'
 
 window.addEventListener('scroll', e => {
-    console.log(getComputedStyle(header).backgroundColor, window.scrollY);
+    // console.log(getComputedStyle(header).backgroundColor, window.scrollY);
 
     if(window.scrollY > 0) {
         if(header.mode == 'top'){
