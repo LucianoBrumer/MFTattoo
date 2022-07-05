@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/jpg" href="./assets/images/logo.jpg" />
+    <script src="./assets/js/effects.js" defer></script>
+    <script src="./assets/js/header.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="./" id="title">MF Tattoo</a>
         <nav>
-            <a href="#tattoos">Tatuajes</a>
-            <a href="#artists">Artistas</a>
-            <a href="#location">Horarios</a>
-            <a href="#location">Ubicacion</a>
+            <a effect="scrollto-tattoos">Tatuajes</a>
+            <a effect="scrollto-artists">Artistas</a>
+            <a effect="scrollto-tattoos">Horarios</a>
+            <a effect="scrollto-location">Ubicacion</a>
         </nav>
     </header>
     <a href="https://wa.link/7ue6ep" target="_blank">
@@ -39,9 +41,35 @@
         <img loading="lazy" src="./assets/images/logo.jpg" alt="">
     </main>
     <div id="tattoos" class="section">
-        <h2>
-            Tatuajes
-        </h2>
+        <div class="title">
+            <h2>
+                Tatuajes
+            </h2>
+            <p>Explora nuestro trabajo</p>
+        </div>
+        <div class="showroom" >
+            <div class="gallery" >
+                <div class="gallery-item"><img src="./assets/images/tattoos/01.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/02.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/03.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/04.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/05.jpg" loading="lazy" alt=""></div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item"><img src="./assets/images/tattoos/06.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/07.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/08.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/09.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/10.jpg" loading="lazy" alt=""></div>
+            </div>
+            <div class="gallery" >
+                <div class="gallery-item"><img src="./assets/images/tattoos/11.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/12.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/13.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/14.jpg" loading="lazy" alt=""></div>
+                <div class="gallery-item"><img src="./assets/images/tattoos/15.jpg" loading="lazy" alt=""></div>
+            </div>
+        </div>
     </div>
     <div id="artists" class="section">
         <h2>Artistas</h2>

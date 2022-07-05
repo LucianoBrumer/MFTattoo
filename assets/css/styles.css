@@ -8,11 +8,13 @@
 html {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
   width: 100%;
   padding: 25px 40px;
+  background-color: transparent;
   color: #fff;
   position: fixed;
   top: 0;
@@ -38,6 +40,7 @@ header nav a {
   font-weight: 100;
   opacity: 0.5;
   transition: opacity 0.3s;
+  cursor: pointer;
 }
 header nav a:hover {
   opacity: 1;
@@ -129,6 +132,53 @@ main .title .redes a:hover {
   font-size: 75px;
   color: #fff;
   font-weight: 300;
+}
+
+#tattoos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 50px;
+}
+#tattoos .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#tattoos .title p {
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 100;
+  font-size: 20px;
+}
+#tattoos .showroom {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+#tattoos .showroom .gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#tattoos .showroom .gallery .gallery-item {
+  min-width: 300px;
+  height: 300px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#tattoos .showroom .gallery .gallery-item img {
+  width: 100%;
+  transition: transform 0.75s;
+}
+#tattoos .showroom .gallery .gallery-item:hover > img {
+  transform: scale(1.5);
 }
 
 footer {
