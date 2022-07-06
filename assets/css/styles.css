@@ -191,10 +191,10 @@ main .title .redes a:hover {
 }
 #tattoos .showroom .gallery .gallery-item img {
   width: 100%;
-  transition: transform 0.75s;
+  transition: transform 0.5s;
 }
 #tattoos .showroom .gallery .gallery-item:hover > img {
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
 
 #artists .gallery {
@@ -203,8 +203,37 @@ main .title .redes a:hover {
   align-items: center;
   width: 100%;
 }
-#artists .gallery img {
+#artists .gallery .gallery-item {
   width: 250px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#artists .gallery .gallery-item img {
+  width: 100%;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+#artists .gallery .gallery-item i {
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 30px;
+}
+#artists .gallery .gallery-item:hover > img {
+  transform: scale(1.25);
+}
+#artists .gallery .gallery-item:hover > i {
+  opacity: 0.5;
 }
 
 #location-div {

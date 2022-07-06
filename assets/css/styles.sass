@@ -197,16 +197,17 @@ main
                 min-width: 300px
                 height: 300px
                 cursor: pointer
+                
                 // border-radius: 2.5%
                 
                 overflow: hidden
 
                 img
                     width: 100%
-                    transition: transform .75s
+                    transition: transform .5s
 
                 &:hover > img
-                    transform: scale(1.5)
+                    transform: scale(1.25)
 
 
 #artists
@@ -216,10 +217,39 @@ main
         justify-content: space-evenly
         align-items: center
         width: 100%
-        // background: red
 
-        img
+        .gallery-item
             width: 250px
+            cursor: pointer
+            position: relative
+            overflow: hidden
+            // box-shadow:0px 25px 50px -25px rgba(223, 215, 215, 0.25)
+
+            img
+                width: 100%
+                transition: transform .5s
+                transform: scale(1.1)
+
+            i
+                background: #000
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                color: $light
+                opacity: 0
+                transition: opacity .5s
+                font-size: 30px
+
+            &:hover > img
+                transform: scale(1.25)
+
+            &:hover > i
+                opacity: .5
 
 #location-div
     gap: 25px
