@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LucianoBrumer/MFTattoo/issues"
   },
-  "homepage": "https://github.com/LucianoBrumer/MFTattoo#readme"
+  "homepage": "https://github.com/LucianoBrumer/MFTattoo#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
 }

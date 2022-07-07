@@ -1,269 +1,267 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap')
-    
+
 $light: #fff
-$dark: #080208
-    
+$dark: #140b14
+$footer: #0f090f
+
 *
-    padding: 0
-    margin: 0
-    box-sizing: border-box
+  padding: 0
+  margin: 0
+  box-sizing: border-box
 
 html
-    font-family: 'Poppins', sans-serif
-    overflow-x: hidden
-    scroll-behavior: smooth
+  font-family: 'Poppins', sans-serif
+  overflow-x: hidden
+  scroll-behavior: smooth
 
-::-webkit-scrollbar 
+::-webkit-scrollbar
   width: 16px
 
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb
   border: 4px solid transparent
   background-clip: padding-box
   border-radius: 9999px
   background-color: $dark
 
-
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-track
   background-color: #160a16
 
 header
-    width: 100%
-    padding: 25px 40px
+  width: 100%
+  padding: 25px 40px
     // background: rgba(8, 2, 8, 0.75)
-    background-color: transparent 
-    color: $light
+  background-color: transparent
+  color: $light
     // border-bottom: 1px solid rgba(255, 255, 255, 0.25)
-    
-    position: fixed
-    top: 0
 
-    display: flex
-    justify-content: space-between
-    align-items: center
-    z-index: 1
+  position: fixed
+  top: 0
+
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: 1
 
     // display: none
+  #title
+    margin: 0
+    font-weight: 300
+    font-size: 30px
+    color: $light
+    text-decoration: none
 
-    #title
-        margin: 0
-        font-weight: 300
-        font-size: 30px
-        color: $light
-        text-decoration: none
+  nav
+    display: flex
+    gap: 25px
 
-    nav
-        display: flex
-        gap: 25px
+    a
+      text-decoration: none
+      color: $light
+      font-weight: 100
+      opacity: 0.5
+      transition: opacity .3s
+      cursor: pointer
 
-        a
-            text-decoration: none
-            color: $light
-            font-weight: 100
-            opacity: 0.5
-            transition: opacity .3s
-            cursor: pointer
-
-            &:hover
-                opacity: 1
+      &:hover
+        opacity: 1
 
 main
-    width: 100%
-    height: 100vh
+  width: 100%
+  height: 100vh
 
-    display: flex
-    justify-content: center
-    align-items: center
-    gap: 300px
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 300px
 
     // filter: blur(2px)
     // this does the trick
     // transform: scale(1.1)
+  .background
+    background-image: url('../images/eva2.jpg')
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: -1
+    filter: blur(3px)
+    background-size: cover
+    transform: scale(1.1)
 
-    .background
-        background-image: url('../images/eva2.jpg')
-        position: absolute
-        width: 100%
-        height: 100%
-        z-index: -1
-        filter: blur(3px)
-        background-size: cover
-        transform: scale(1.1) 
-
-    .title
-        color: $light
-        font-weight: 300
-        display: flex
-        flex-direction: column
-
-        h1
-            font-weight: 300
-            margin: 0
-            font-size: 100px
-
-        p
-            color: rgba(255, 255, 255, 0.5)
-            font-size: 25px
-            margin: 0
-
-        .pedir
-            text-decoration: none
-            color: $light
-            border: 1px solid $light
-            width: 230px
-            text-align: center
-            margin-top: 15px
-            opacity: 0.5
-            font-size: 20px
-            display: flex
-            justify-content: center
-            align-items: center
-            gap: 5px
-            padding: 10px
-            transition: opacity .3s
-
-            &:hover
-                opacity: 1
-
-        .redes
-            display: flex
-            justify-content: space-between
-            align-items: center
-            margin-top: 10px
-            width: 230px
-
-            a
-                border: 1px solid $light
-                color: $light
-                font-size: 20px
-                font-weight: 100 
-                display: flex
-                justify-content: center
-                align-items: center
-                text-decoration: none
-                opacity: 0.5
-                padding: 5px 12.5px
-                transition: opacity .3s
-
-                &:hover
-                    opacity: 1
-                
-
-.section
-    background: $dark
-    display: flex
-    justify-content: center
-
-    h2
-        font-size: 75px
-        color: $light
-        font-weight: 300
-
-.section
+  .title
+    color: $light
+    font-weight: 300
     display: flex
     flex-direction: column
-    justify-content: center
-    width: 100%
-    align-items: center
-    padding-top: 50px
-    padding-bottom: 50px
-    gap: 50px
 
-    .title
+    h1
+      font-weight: 100
+      margin: 0
+      font-size: 100px
+
+    p
+      color: rgba(255, 255, 255, 0.5)
+      font-size: 25px
+      margin: 0
+
+    .pedir
+      text-decoration: none
+      color: $light
+      border: 1px solid $light
+      width: 230px
+      text-align: center
+      margin-top: 15px
+      opacity: 0.5
+      font-size: 20px
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 5px
+      padding: 10px
+      transition: opacity .3s
+
+      &:hover
+        opacity: 1
+
+    .redes
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 10px
+      width: 230px
+
+      a
+        border: 1px solid $light
+        color: $light
+        font-size: 20px
+        font-weight: 100
         display: flex
         justify-content: center
-        flex-direction: column
         align-items: center
+        text-decoration: none
+        opacity: 0.5
+        padding: 5px 12.5px
+        transition: opacity .3s
 
-        p
-            color: $light
-            opacity: 0.5
-            font-weight: 100
-            font-size: 20px
+        &:hover
+          opacity: 1
+
+.section
+  background: $dark
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  align-items: center
+  padding-top: 50px
+  padding-bottom: 50px
+  gap: 50px
+
+  .title
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    color: $light
+    gap: 15px
+
+    h2
+      font-weight: 100
+      font-size: 62.5px
+      font-style: italic
+      padding-bottom: 10px
+      border-bottom: 1px solid $light
+      transition: opacity .3s
+
+      &:hover
+        opacity: 0.5
+
+    p
+      opacity: 0.5
+      font-weight: 100
+      font-size: 20px
 
 #tattoos
-
-    .showroom
-        display: flex
-        gap: 10px
-        flex-direction: column
-
-        .gallery
-            width: 100%
-            display: flex
-            justify-content: center
-            gap: 10px
-
-            .gallery-item
-                min-width: 300px
-                height: 300px
-                cursor: pointer
-                
-                // border-radius: 2.5%
-                
-                overflow: hidden
-
-                img
-                    width: 100%
-                    transition: transform .5s
-
-                &:hover > img
-                    transform: scale(1.25)
-
-
-#artists
+  .showroom
+    display: flex
+    gap: 10px
+    flex-direction: column
 
     .gallery
-        display: flex
-        justify-content: space-evenly
-        align-items: center
-        width: 100%
+      width: 100%
+      display: flex
+      justify-content: center
+      gap: 10px
 
-        .gallery-item
-            width: 250px
-            cursor: pointer
-            position: relative
-            overflow: hidden
+      .gallery-item
+        width: 212.5px
+        height: 212.5px
+        cursor: pointer
+        overflow: hidden
+
+        img
+          width: 100%
+          transition: transform .5s
+
+        &:hover > img
+          transform: scale(1.25)
+
+#artists
+  .gallery
+    display: flex
+    justify-content: space-evenly
+    width: 100%
+
+    .gallery-item
+      width: 325px
+      cursor: pointer
+      position: relative
+      overflow: hidden
             // box-shadow:0px 25px 50px -25px rgba(223, 215, 215, 0.25)
+      img
+        width: 100%
+        background-position: center
+        transition: transform .5s
 
-            img
-                width: 100%
-                transition: transform .5s
-                transform: scale(1.1)
+      .gallery-item-center
+        transform: scale(1.25)
 
-            i
-                background: #000
-                position: absolute
-                top: 0
-                left: 0
-                width: 100%
-                height: 100%
-                display: flex
-                justify-content: center
-                align-items: center
-                color: $light
-                opacity: 0
-                transition: opacity .5s
-                font-size: 30px
+      i
+        background: #000
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $light
+        opacity: 0
+        transition: opacity .5s
+        font-size: 30px
 
-            &:hover > img
-                transform: scale(1.25)
+      &:hover > img
+        transform: scale(1.25)
 
-            &:hover > i
-                opacity: .5
+      &:hover > .gallery-item-center
+        transform: scale(1.5)
+
+      &:hover > i
+        opacity: .5
 
 #location-div
-    gap: 25px
+  gap: 37.5px
 
 footer
-    width: 100%
-    height: 50vh
-    
-    background: $dark
+  width: 100%
+  height: 100px
+
+  background: $footer
 
 #whatsapp
-    border: none
-    position: fixed
-    bottom: 4%
-    right: 3%
-    width: 55px
-    z-index: 1
+  border: none
+  position: fixed
+  bottom: 4%
+  right: 3%
+  width: 55px
+  z-index: 1
