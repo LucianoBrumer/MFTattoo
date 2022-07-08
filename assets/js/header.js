@@ -2,7 +2,16 @@ const header = document.querySelector('#header')
 
 header.state = 'visible'
 header.timer = null
-window.scrollY > 0 ? header.mode = 'normal' : header.mode = 'top'
+
+if(window.scrollY){
+    header.mode = 'normal'
+    header.style.backgroundColor =  "rgba(30, 4, 38, 0.75)"
+    header.style.padding = "12.5px 20px"
+}else{
+    header.mode = 'top'
+    header.style.backgroundColor =  "rgba(30, 4, 38, 0)"
+    header.style.padding = "25px 40px"
+}
 
 window.addEventListener('scroll', e => {
     // console.log(getComputedStyle(header).backgroundColor, window.scrollY);
@@ -11,7 +20,7 @@ window.addEventListener('scroll', e => {
         if(header.mode == 'top'){
             header.mode = 'normal'
             header.animate([
-                {backgroundColor: "rgba(8, 2, 8, 0.75)", padding: "12.5px 20px"}
+                {backgroundColor: "rgba(30, 4, 38, 0.75)", padding: "12.5px 20px"}
                 
             ],{
                 duration: 250,
@@ -21,7 +30,7 @@ window.addEventListener('scroll', e => {
     }else{
         header.mode = 'top'
         header.animate([
-            {backgroundColor: "rgba(8, 2, 8, 0)", padding: "25px 40px"}
+            {backgroundColor: "rgba(30, 4, 38, 0)", padding: "25px 40px"}
         ],{
             duration: 250,
             fill: 'forwards'
