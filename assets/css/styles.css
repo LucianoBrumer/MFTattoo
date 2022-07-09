@@ -18,7 +18,7 @@ html {
   border: 4px solid transparent;
   background-clip: padding-box;
   border-radius: 9999px;
-  background-color: #231129;
+  background-color: #33233a;
 }
 
 ::-webkit-scrollbar-track {
@@ -163,13 +163,14 @@ main .title .redes a:hover {
   transition: opacity 0.3s;
 }
 .section .title p {
-  opacity: 0.5;
+  opacity: 0.75;
+  font-weight: 800;
   font-weight: 100;
   font-size: 20px;
 }
 
 #tattoos {
-  background-color: #231129;
+  background-color: #181817;
 }
 #tattoos .showroom {
   display: flex;
@@ -197,7 +198,7 @@ main .title .redes a:hover {
 }
 
 #artists {
-  background-color: #32183a;
+  background-color: #33233a;
 }
 #artists .gallery {
   display: flex;
@@ -244,14 +245,14 @@ main .title .redes a:hover {
 }
 
 #location-div {
-  background-color: #231129;
+  background-color: #181817;
   gap: 37.5px;
 }
 
 footer {
   width: 100%;
   height: 150px;
-  background: #1a0e1f;
+  background: #0e0e0d;
 }
 
 #whatsapp {
