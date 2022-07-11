@@ -18,7 +18,7 @@ html {
   border: 4px solid transparent;
   background-clip: padding-box;
   border-radius: 9999px;
-  background-color: #32213a;
+  background-color: rgb(50, 33, 58);
 }
 
 ::-webkit-scrollbar-track {
@@ -170,7 +170,7 @@ main .title .redes a:hover {
 }
 
 #tattoos {
-  background-color: #181817;
+  background-color: rgb(50, 33, 58);
 }
 #tattoos .showroom {
   display: flex;
@@ -198,7 +198,7 @@ main .title .redes a:hover {
 }
 
 #artists {
-  background-color: #32213a;
+  background-color: #141414;
 }
 #artists .gallery {
   display: flex;
@@ -245,7 +245,7 @@ main .title .redes a:hover {
 }
 
 #location-div {
-  background-color: #181817;
+  background-color: rgb(50, 33, 58);
   gap: 37.5px;
 }
 

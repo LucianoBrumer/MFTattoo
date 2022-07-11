@@ -5,11 +5,11 @@ header.timer = null
 
 if(window.scrollY){
     header.mode = 'normal'
-    header.style.backgroundColor =  "rgba(30, 4, 38, 0.75)"
+    header.style.backgroundColor =  "rgba(50, 33, 58, 0.5)"
     header.style.padding = "12.5px 20px"
 }else{
     header.mode = 'top'
-    header.style.backgroundColor =  "rgba(30, 4, 38, 0)"
+    header.style.backgroundColor =  "rgba(50, 33, 58, 0)"
     header.style.padding = "25px 40px"
 }
 
@@ -20,7 +20,7 @@ window.addEventListener('scroll', e => {
         if(header.mode == 'top'){
             header.mode = 'normal'
             header.animate([
-                {backgroundColor: "rgba(30, 4, 38, 0.75)", padding: "12.5px 20px"}
+                {backgroundColor: "rgba(50, 33, 58, 0.5)", padding: "12.5px 20px"}
                 
             ],{
                 duration: 250,
